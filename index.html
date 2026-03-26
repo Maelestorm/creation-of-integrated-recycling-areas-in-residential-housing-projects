@@ -3,10 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Integrated Recycling Areas</title>
+    <title>CRP - Creation of Integrated Recycling Areas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #35424a;
+            color: #ffffff;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to the Integrated Recycling Areas Project</h1>
-    <p>Current Date and Time (UTC): 2026-03-26 19:46:49</p>
+    <header>
+        <h1>Creation of Integrated Recycling Areas</h1>
+    </header>
+    <section>
+        <h2>Welcome to the CRP Project</h2>
+        <p>This project aims to improve recycling in residential areas.</p>
+        <button id="more-info">Learn More</button>
+        <div id="info" style="display:none;">
+            <p>Integrated recycling areas reduce waste and improve recycling rates!</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2026 CRP Project</p>
+    </footer>
+    <script>
+        document.getElementById('more-info').addEventListener('click', function() {
+            var info = document.getElementById('info');
+            if (info.style.display === 'none') {
+                info.style.display = 'block';
+            } else {
+                info.style.display = 'none';
+            }
+        });
+    </script>
 </body>
 </html>
